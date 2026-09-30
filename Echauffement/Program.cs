@@ -31,13 +31,15 @@ class Program
         int money = Convert.ToInt32(Console.ReadLine());
 
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
-        Console.WriteLine("Couteau(5)" +
-            " Lasso(10)" +
-            " Pistolet(15)" +
-            " Fusil à pompe(20)");
+        Console.WriteLine("1-Couteau(5)" +
+            " 2-Lasso(10)" +
+            " 3-Pistolet(15)" +
+            " 4-Fusil à pompe(20)");
 
-        
+
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
+        Console.WriteLine("choisir une arme de 1 à 4");
+        Convert.ToInt32(Console.ReadLine());
         
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
         
