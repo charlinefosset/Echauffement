@@ -9,14 +9,16 @@ class Program
          */
 
         // Etape 1 : présentez-vous en écrivant votre prénom et votre jeu préféré
-        Console.WriteLine("Je m'appelle Charline et mon jeu préféré est Minecraft");
+        Console.WriteLine("Présentez-vous en écrivant votre nome et votre jeu préfére ");
+        Console.ReadLine();
 
         // Etape 2 : demandez à l'utilisateur son prénom et son âge
         Console.WriteLine("Quel age as-tu?");
-        String age = Console.ReadLine();
-        
+        string age = Console.ReadLine ();
+
         // Etape 3 : affichez soit "Tu es majeur", soit "Tu es mineur" dépendant de l'âge fourni par l'utilisateur
-        
+  
+     
         // Etape 4 : demandez maintenant à l'utilisateur combien d'euro il a (nombre décimal)
         
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
