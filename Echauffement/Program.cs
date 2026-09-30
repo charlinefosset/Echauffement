@@ -39,14 +39,45 @@ class Program
 
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
         Console.WriteLine("choisir une arme de 1 à 4");
-        Convert.ToInt32(Console.ReadLine());
-        
+        int choixarme = Convert.ToInt32(Console.ReadLine());
+
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
-        
+        if (choixarme==1)
+        {
+            money = money - 5;
+            Console.WriteLine("Vous avez choisi le couteau");
+            if (money<0)
+            {
+                Console.WriteLine("Vous n'avez pas assez d'argent");
+            }
+            else
+            {
+                Console.WriteLine("Couteau obtenu");
+            }
+
+        }
+        if (choixarme==2)
+        {
+            money = money - 10;
+            Console.WriteLine("Vous avez choisi le lasso");
+            if (money<0)
+            {
+                Console.WriteLine("vous n'avez pas assez d'agrent");
+            }
+            else
+            {
+                Console.WriteLine("Lasso obtenu");
+            }
+        }
+        if (choixarme==3)
+        {
+            money = money - 15
+        }
+
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
-            // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
-            // Dans tous les autres cas, informez l'utilisateur que l'action n'a pas été possible
-            
+        // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
+        // Dans tous les autres cas, informez l'utilisateur que l'action n'a pas été possible
+
         /*
          * Après votre dernier commit, faites un push de votre projet pour qu'il soit accessible sur github.com
          */
