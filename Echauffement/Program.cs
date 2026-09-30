@@ -69,10 +69,21 @@ class Program
                 Console.WriteLine("Lasso obtenu");
             }
         }
-        if (choixarme==3)
+        if (choixarme == 3)
         {
-            money = money - 15
+            money = money - 15;
+            Console.WriteLine("vous avez choisi le psitolet");
+            if (money < 0)
+            {
+                Console.WriteLine("Vous n'avez pas assez d'argent");
+            }
+            else
+            {
+                Console.WriteLine("Pistolet obtenu");
+            }
+
         }
+
 
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
         // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
